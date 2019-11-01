@@ -1,0 +1,11 @@
+
+npm init -y
+npm i netlify-lambda
+
+add 
+    "start:lambda": "netlify-lambda serve src/lambda",
+    "build:lambda": "netlify-lambda build src/lambda"
+in package.json, under 'scripts'
+
+npm run start:lambda
+npm run build:lambda
